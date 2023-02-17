@@ -1,0 +1,250 @@
+:root{
+    /*general collor*/
+    --white: #FFFFFF;
+    --black: #000000;
+    /*blue pallete*/
+    --blue1: #0A2647;
+    --blue2: #144272;
+    --blue3: #205295;
+    --blue4: #2C74B3;
+
+    /*cyan pallete*/
+    --cyan1: #222831;
+    --cyan2: #393E46;
+    --cyan3: #00ADB5;
+    --cyan4: #EEEEEE;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica Neue, "Myriad Pro", serif;
+}
+
+h1{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: 14pt;
+    font-weight: normal;
+    text-align: center;
+}
+p{
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: justify;
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+/*#region Header & navigation*/
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--cyan2);
+}
+#logo{
+    gap: 10px;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    background: var(--cyan2);
+    color: var(--white);
+}
+
+menu{
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    display: block;
+}
+/*#endregion*/
+
+/*#region Hamburger menu*/
+#menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--cyan2);
+    z-index: 1;
+}
+#menu-list{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    top: 30%;
+}
+#menu-list a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16pt;
+    font-weight: bold;
+}
+#socials-list{
+    position: fixed;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+#socials-list i{
+    color: var(--white);
+}
+
+/*#endregion*/
+
+section{
+    height: calc(100vh - 70px);
+    position: relative;
+}
+.section-content{
+    margin: 0 25px;
+}
+#section-2{
+    background: var(--cyan1);
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+.section-content, .main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    gap: 25px;
+}
+.main-image{
+    width: 200px;
+    height: 200px;
+}
+
+/*#region Buttons*/
+.pushable {
+    background: var(--blue2);;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+.front {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: var(--blue4);;
+    color: white;
+    transform: translateY(-6px);
+}
+.front:hover{
+    background: var(--blue3);
+}
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+/*#endregion*/
+
+a#scroll-down-arrow-btn{
+    margin: auto 0;
+    color: black;
+}
+#first-header, .main-image{
+    margin-top: 25px;
+}
+.programing-languages{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#about-me-main-img{
+    width: 100%;
+}
+
+#software ul li:first-child{
+    font-weight: bold;
+}
+#software{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+#software ul{
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#school-thesis{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+#school-thesis h2 {
+    font-weight: bold;
+}
+.thesis{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.thesis img{
+    width: 75%;
+}
+#certificates{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#categories{
+    display: grid;
+    grid-template:
+            "a a a"
+            "a a a"
+            "a a a";
+    width: 100%;
+    gap: 10px;
+}
+
+#categories p{
+    width: 96px;
+    height: 96px;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
