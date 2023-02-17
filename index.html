@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Matuj</title>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="scripts/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/3f1fd67668.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="menu">
+    <ul id="menu-list">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="photography.html">Fotografie</a></li>
+        <li><a href="3drenders.html">3D Rendery</a></li>
+        <li><a href="aboutMe.html">O mně</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <ul id="socials-list">
+        <li><a href="https://twitter.com/Raindler"><i class="fa-brands fa-twitter fa-3x"></i></a></li>
+        <li><a href="https://www.instagram.com/matejruze/"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+        <li><a href="https://www.facebook.com/matejruzicka6"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/matěj-růžička-944675234"><i
+                class="fa-brands fa-linkedin fa-3x"></i></a></li>
+    </ul>
+</div>
+<header>
+    <div id="logo">
+        <!--
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        -->
+        <i class="fa-solid fa-m fa-2x"></i>
+        <i class="fa-solid fa-a fa-2x"></i>
+        <i class="fa-solid fa-t fa-2x"></i>
+        <i class="fa-solid fa-u fa-2x"></i>
+        <i class="fa-solid fa-j fa-2x"></i>
+    </div>
+    <menu onclick="openMenu()">
+        <i id="menu-icon" class="fa-solid fa-bars fa-xl"></i>
+    </menu>
+</header>
+<main>
+    <section class="hidden" id="section-1">
+        <div class="section-content">
+            <img class="main-image" src="img/main-img.png" alt="Main image">
+            <div class="main-text">
+                <h1>Ahoj, vítej!</h1>
+                <h2>Krátký popis toho co jsem a co dělám, který je alepoň na dva řádky...</h2>
+                <button class="pushable">
+                <span class="front">
+                    STÁHNOUT CV
+                </span>
+                </button>
+            </div>
+            <a class="pushable" id="scroll-down-arrow-btn" href="#section-2">
+                <i class="fa-solid fa-angle-down fa-2x front"></i>
+            </a>
+        </div>
+    </section>
+    <section class="hidden" id="section-2">
+        <div class="section-content">
+            <h1 id="first-header">Programovací jazyky</h1>
+            <ul class="programing-languages">
+                <li>Java</li>
+                <li>C#</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>JS</li>
+                <li>SQ</li>
+            </ul>
+        </div>
+
+    </section>
+</main>
+<script src="scripts/menu.js"></script>
+<script src="scripts/scroll.js"></script>
+</body>
+</html>
