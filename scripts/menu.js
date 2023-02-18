@@ -2,7 +2,7 @@ let body = document.body;
 const menu = document.getElementById('menu');
 let icon = document.getElementById('menu-icon');
 let logo = document.getElementById('logo');
-
+let devider = document.getElementById('devider');
 function openMenu(){
 
     if(menu.style.display === 'flex'){
@@ -13,6 +13,7 @@ function openMenu(){
         icon.classList.add('fa-xl');
         icon.classList.add('fa-bars');
         logo.style.display = 'block';
+        devider.style.display = 'block';
     }
     else {
         menu.style.display = 'flex';
@@ -22,8 +23,7 @@ function openMenu(){
         icon.classList.add('fa-2xl');
         icon.classList.add('fa-xmark');
         logo.style.display = 'none';
-    }
-}
-function closeMenu(){
+        devider.style.display = 'none';
 
+    }
 }

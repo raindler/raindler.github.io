@@ -27,24 +27,24 @@
     </ul>
 </div>
 <header>
-    <div id="logo">
-        <!--
-        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-        -->
+    <div id="logo"> <a href="index.html">
         <i class="fa-solid fa-m fa-2x"></i>
         <i class="fa-solid fa-a fa-2x"></i>
         <i class="fa-solid fa-t fa-2x"></i>
         <i class="fa-solid fa-u fa-2x"></i>
         <i class="fa-solid fa-j fa-2x"></i>
+    </a>
     </div>
     <menu onclick="openMenu()">
         <i id="menu-icon" class="fa-solid fa-bars fa-xl"></i>
     </menu>
 </header>
+
+<div class="down-devider devider"></div>
 <main>
-    <section class="hidden" id="section-1">
-        <div class="section-content">
-            <img class="main-image" src="img/main-img.png" alt="Main image">
+    <section id="section-1">
+        <div class="section-content" id="first-section-index">
+            <img class="main-image" src="img/Matuj_face_2.png" alt="Main image">
             <div class="main-text">
                 <h1>Ahoj, vítej!</h1>
                 <h2>Krátký popis toho co jsem a co dělám, který je alepoň na dva řádky...</h2>
@@ -54,12 +54,13 @@
                 </span>
                 </button>
             </div>
-            <a class="pushable" id="scroll-down-arrow-btn" href="#section-2">
+            <a class="pushable" id="scroll-down-arrow-btn" href="#scroll-down">
                 <i class="fa-solid fa-angle-down fa-2x front"></i>
             </a>
         </div>
     </section>
-    <section class="hidden" id="section-2">
+    <div class="up-devider devider" id="scroll-down"></div>
+    <section id="section-2">
         <div class="section-content">
             <h1 id="first-header">Programovací jazyky</h1>
             <ul class="programing-languages">
@@ -71,11 +72,35 @@
                 <li>JS</li>
                 <li>SQ</li>
             </ul>
-        </div>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
+            <h1>Text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo ipsum provident. Aliquam animi architecto blanditiis dolorum eaque eos excepturi maxime, neque nisi possimus rerum veniam. Assumenda atque quos unde!</p>
 
+        </div>
     </section>
+    <div class="down-devider devider"></div>
+    <hr>
+    <footer>
+        <p>&copy; All rights reserved</p>
+        <p>Made by Matuj</p>
+    </footer>
 </main>
 <script src="scripts/menu.js"></script>
-<script src="scripts/scroll.js"></script>
+<script src="scripts/scrollTo.js"></script>
 </body>
 </html>
